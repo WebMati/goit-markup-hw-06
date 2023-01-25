@@ -324,15 +324,18 @@
         </svg></a>
     </div>
     </section>
-    <section class="jointonews">
-    <h1>ZAPISZ SIĘ DO NEWSLETTERA</h1>
-    <div>
-    <input type="text" id="email" name="E-mail" placeholder="E-mail">
-    <input type="submit" value="Zapisz się">
-    <svg class="send">
-      <use height="24px" width="24px" href="./images/icons.svg#icon-newsletter"></use>
-    </svg>
-    </div>
+    <div class="newsletter">
+      <h4 class="footer-header">Zapisz się do newslettera</h4>
+      <form>
+        <label>
+          <input class="newsletter-input" type="email" name="email" placeholder="E-mail" />
+        </label>
+        <button class="newsletter-submit" type="submit">
+          Zapisz się
+          <svg class="newsletter-icon" width="24px" height="24px">
+            <use width="24px" height="24px" href="./images/icons.svg#icon-newsletter"></use>
+          </svg>
+        </button>
     </section>
   </div>
   </footer>
@@ -357,7 +360,7 @@
           <svg width="12px" height="12px" class="iconmail">
             <use href="./images/icons.svg#icon-email-black"></use>
           </svg>
-          <input type="text" id="email" name="lastname"  placeholder="">
+          <input type="email" id="email" name="lastname"  placeholder="">
       
           <label for="comment">Komentarz</label>
           <textarea class="leavecomment" id="comment" name="comment" placeholder="Wprowadz tekst"></textarea>

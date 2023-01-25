@@ -329,53 +329,48 @@ main {
     letter-spacing: 0.03em;
 }
 
-.jointonews {
-    display: inline;
-    padding-left: 70px;
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    margin-left: 78px;
+    margin-top: -20px;
 }
 
-.send {
-    padding-left: 520px;
-    bottom: 40px;
-    z-index: 1;
-    display: block;
-    position: relative;
-    fill: #FFFFFF;    
+.newsletter>form {
+    display: flex;
 }
 
-.jointonews h1 {
-    font-size: 14px;
-        line-height: 16px;
-        font-weight: 700;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        padding-bottom: 20px;
-        margin: 0;
-}
-
-.jointonews input[type="text"] {
-    display: inline;
+.newsletter .newsletter-input {
     width: 358px;
-    height: 50px;
+    height: 52px;
     color: rgba(255, 255, 255, 0.6);
-    background-color: rgba(47, 48, 58, 1);
-    border: 1px solid rgba (255, 255, 255, 0.3);
+    border: 1px solid rgba(117, 117, 117, 0.3);
+    border-radius: 4px;
+    padding: 16px 15px;
+    background-color: transparent;
 }
 
-.jointonews input[type="submit"] {
-    padding-right: 50px;
-    z-index: 2;
+.newsletter-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 12px;
-    padding-top: 10px;
-    font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
-    display: inline;
+    font-weight: 700;
+    line-height: 1.88em;
     letter-spacing: 0.06em;
-    width: 200px;
-    height: 50px;
+    color: #FFFFFF;
     background-color: #2196F3;
-    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+}
+
+.newsletter-icon {
+    margin-left: 24px;
 }
 
 
@@ -593,8 +588,9 @@ a.menu-liitem {
 a.menu-item:focus, a.menu-item:hover,
 li.active a {
     text-decoration: underline solid #2196F3;
-    text-underline-offset: 35px;
+    text-underline-offset: 32px;
     text-decoration-thickness: 4px;
+    border-radius: 2px;
 }
 
 
@@ -853,7 +849,7 @@ a.menu-item:hover {
     position: absolute;
 }
 
-.iconmail {
+.modal .iconmail {
     margin: 22px 42px;
     box-sizing: border-box;
     display: flex;
@@ -889,6 +885,16 @@ height: 40px;
   padding: 15px 30px;
   margin: 10px 30px;
   display: flex;
+}
+
+
+.modal input[type=email],
+select {
+    width: 448px;
+    height: 40px;
+    padding: 15px 30px;
+    margin: 10px 30px;
+    display: flex;
 }
 
 .modal input[type=submit] {
@@ -991,6 +997,15 @@ input[type=submit] {
 }
 
 input[type=text],
+select {
+    padding: 12px 20px;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email],
 select {
     padding: 12px 20px;
     display: flex;
